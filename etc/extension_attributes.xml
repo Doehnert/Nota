@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- File: app/code/Atwix/OrderFeedback/etc/extension_attributes.xml -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Sales\Api\Data\OrderInterface">
+        <attribute code="numero_nota" type="string" />
+        <attribute code="chave_nota" type="string" />
+    </extension_attributes>
+</config>

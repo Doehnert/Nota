@@ -1,0 +1,22 @@
+{
+    "name": "vexpro/module-orderfeedback",
+    "description": "Adiciona os campos num_nf e chave_nf associados com uma compra e incorpora eles na api REST do magento 2",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "eltonfd@gmail.com",
+            "name": "Elton"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vexpro\\OrderFeedback\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

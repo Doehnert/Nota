@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- File: app/code/Atwix/OrderFeedback/etc/di.xml -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="atwix_orderfeedback_add_order_extension_attribute"
+                type="Vexpro\Nota\Plugin\OrderRepositoryPlugin" />
+    </type>
+</config>
