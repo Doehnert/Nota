@@ -91,8 +91,7 @@ class OrderRepositoryPlugin
     public function beforeSave(
         OrderRepositoryInterface $subject,
         OrderInterface $quote
-    )
-    {
+    ) {
         $extensionAttributes = $quote->getExtensionAttributes() ?: $this->extensionFactory->create();
         if ($extensionAttributes !== null && $extensionAttributes->getNumeroNota() !== null) {
             $quote->setNumeroNota($extensionAttributes->getNumeroNota());
@@ -101,5 +100,4 @@ class OrderRepositoryPlugin
 
         return [$quote];
     }
-
 }
